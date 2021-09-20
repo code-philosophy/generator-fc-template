@@ -1,0 +1,33 @@
+{
+	"name": "generator-ninelines-template",
+	"version": "3.0.2",
+	"description": "Project template generator",
+	"repository": "ninelines-team/generator-ninelines-template",
+	"author": "Ninelines Agency <info@ninelines.agency>",
+	"license": "ISC",
+	"main": "app/index.js",
+	"keywords": [
+		"autoprefixer",
+		"babel",
+		"browsersync",
+		"eslint",
+		"javascript",
+		"jquery",
+		"gulp",
+		"png-sprites",
+		"pug",
+		"pug-lint",
+		"scss",
+		"stylelint",
+		"svg-sprites",
+		"template",
+		"husky",
+		"yeoman-generator"
+	],
+	"files": [
+		"app"
+	],
+	"dependencies": {
+		"yeoman-generator": "^5.4.0"
+	}
+}
