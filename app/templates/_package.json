@@ -1,6 +1,6 @@
 {
 	"name": "generator-fc-template",
-	"version": "3.0.4",
+	"version": "1.0.0",
 	"description": "Шаблон для разработки сайтов",
 	"repository": "code-philosophy/generator-fc-template",
 	"scripts": {
@@ -15,9 +15,11 @@
 		"@babel/core": "7.14.8",
 		"@babel/plugin-syntax-dynamic-import": "7.8.3",
 		"@babel/preset-env": "7.14.8",
+		"@popperjs/core": "2.10.1",
 		"autoprefixer": "^10.3.1",
 		"babel-eslint": "10.1.0",
 		"babel-loader": "8.2.2",
+		"bootstrap": "5.1.1",
 		"browser-sync": "2.27.5",
 		"connect-history-api-fallback": "1.6.0",
 		"cssnano": "5.0.7",
@@ -60,17 +62,13 @@
 		"stylelint-scss": "3.20.1",
 		"vinyl-buffer": "1.0.1",
 		"webpack": "5.47.0",
-		"webpack-stream": "6.1.2",
+		"webpack-stream": "7.0.0",
 		"yargs": "17.0.1"
 	},
 	"dependencies": {
 		"@babel/plugin-transform-runtime": "7.14.5",
 		"@babel/runtime": "7.14.8",
-		"body-scroll-lock": "3.1.5",
-		"core-js": "3.15.2",
 		"husky": "7.0.1",
-		"jquery": "3.6.0",
-		"lozad": "1.16.0",
 		"normalize.css": "8.0.1",
 		"object-fit-images": "3.2.4",
 		"object-fit-videos": "1.0.4",
