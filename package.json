@@ -1,33 +1,44 @@
 {
-	"name": "generator-fc-template",
-	"version": "3.0.2",
-	"description": "Project template generator",
-	"repository": "code-philosophy/generator-fc-template",
-	"author": "<manager@философия-сода.рф>",
-	"license": "ISC",
-	"main": "app/index.js",
-	"keywords": [
-		"autoprefixer",
-		"babel",
-		"browsersync",
-		"eslint",
-		"javascript",
-		"jquery",
-		"gulp",
-		"png-sprites",
-		"pug",
-		"pug-lint",
-		"scss",
-		"stylelint",
-		"svg-sprites",
-		"template",
-		"husky",
-		"yeoman-generator"
-	],
-	"files": [
-		"app"
-	],
-	"dependencies": {
-		"yeoman-generator": "^5.4.0"
-	}
+  "name": "generator-fc-template",
+  "version": "3.0.2",
+  "description": "Project template generator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-philosophy/generator-fc-template.git"
+  },
+  "author": "manager@философия-сода.рф",
+  "license": "ISC",
+  "main": "app/index.js",
+  "keywords": [
+    "autoprefixer",
+    "babel",
+    "browsersync",
+    "eslint",
+    "javascript",
+    "jquery",
+    "gulp",
+    "png-sprites",
+    "pug",
+    "pug-lint",
+    "scss",
+    "stylelint",
+    "svg-sprites",
+    "template",
+    "husky",
+    "yeoman-generator"
+  ],
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^5.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/code-philosophy/generator-fc-template/issues"
+  },
+  "homepage": "https://github.com/code-philosophy/generator-fc-template#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
