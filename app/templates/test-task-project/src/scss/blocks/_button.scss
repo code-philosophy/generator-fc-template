@@ -1,0 +1,110 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 44px;
+    min-width: 150px;
+    padding: 15px 11px;
+    text-transform: uppercase;
+    background-color: #3366FF;
+    box-shadow: 0px 16px 24px rgba(6, 13, 27, 0.1);
+    border-radius: 101px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.4px;
+    color: white;
+    position: relative;
+    font-family: 'Proxima Nova', 'Arial', sans-serif;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        border-radius: 10px;
+        width: 8px;
+        height: 2px;
+        background-color: white;
+        right: 10px;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        top: 42%;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        bottom: 42%;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: all 0.6s;
+        background-color: darken($color: #3366FF, $amount: 30);
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+@media(min-width: 576px) {
+    .button {
+        min-width: 160px;
+        min-height: 48px;
+        padding: 16px;
+    }
+}
+
+@media(min-width: 992px) {
+    .button {
+        min-width: 206px;
+        min-height: 62px;
+        padding: 20px 11px;
+        font-size: 16px;
+        line-height: 19px;
+
+        &::after,
+        &::before {
+            width: 10px;
+        }
+
+        &::before {
+            top: 43.5%;
+        }
+    
+        &::after {
+            bottom: 43.5%;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .button {
+        min-width: 250px;
+        min-height: 75px;
+        padding: 26px 14px;
+        font-size: 18px;
+        line-height: 24px;
+
+        &::after,
+        &::before {
+            right: 25px;
+        }
+
+        &::before {
+            top: 44%;
+        }
+    
+        &::after {
+            bottom: 44%;
+        }
+    }
+}
