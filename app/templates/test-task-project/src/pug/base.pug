@@ -4,8 +4,8 @@ block vars
 	-
 		var baseDir = './'
 	-
-		var title = typeof title !== 'undefined' ? title : null
-		var description = typeof description !== 'undefined' ? description : null
+		var title = 'Тестовое задание'
+		var description = 'Тестовое задание на вакансию верстальщика'
 		var image = typeof image !== 'undefined' ? image : null
 	-
 		var html = {
@@ -27,7 +27,7 @@ block vars
 			appleTouchFullscreen: null,
 			applicationName: null,
 			charset: 'utf-8',
-			description: description,
+			description: 'Тестовое задание на вакансию верстальщика',
 			formatDetection: {
 				address: true,
 				date: true,
@@ -43,14 +43,14 @@ block vars
 			msapplicationSquare310x310logo: null,
 			msapplicationWide310x150logo: null,
 			msapplicationConfig: null,
-			ogDescription: description,
+			ogDescription: null,
 			ogImage: image,
 			ogImageType: null,
 			ogImageWidth: null,
 			ogImageHeight: null,
 			ogImageAlt: null,
 			ogLocale: 'ru_RU',
-			ogTitle: title,
+			ogTitle: null,
 			ogType: 'website',
 			ogUrl: null,
 			themeColor: null,
@@ -65,7 +65,7 @@ block vars
 		}
 	-
 		var link = {
-			appleTouchIcon: null,
+			appleTouchIcon: '../images/favicons/apple-touch-icon.png',
 			appleTouchIcon40x40: null,
 			appleTouchIcon57x57: null,
 			appleTouchIcon58x58: null,
@@ -97,9 +97,9 @@ block vars
 			appleTouchIconPrecomposed167x167: null,
 			appleTouchIconPrecomposed180x180: null,
 			appleTouchIconPrecomposed1024x1024: null,
-			icon: null,
-			icon16x16: null,
-			icon32x32: null,
+			icon: '../images/favicons/favicon.ico',
+			icon16x16: '../images/favicons/favicon-16x16.png',
+			icon32x32: '../images/favicons/favicon-32x32.png',
 			icon96x96: null,
 			icon128x128: null,
 			icon192x192: null,
@@ -188,8 +188,6 @@ html(class=html.classList)&attributes(html.attrs)
 				meta(name="theme-color" content!=meta.themeColor)
 			if meta.formatDetection !== null && (typeof meta.formatDetection === 'string' || Object.values(meta.formatDetection).some(function (value) { return !value }))
 				meta(name="format-detection" content!=(typeof meta.formatDetection === 'string' ? meta.formatDetection : Object.entries(meta.formatDetection).filter(function (entry) { return !entry[1] || entry[1] === 'no' }).map(function (entry) { return `${entry[0]}=no` }).join(',')))
-			meta(name="description" content="Тестовое задание на вакансию верстальщика")
-			title Тестовое задание
 		if title !== null
 			title!= title
 		block links
