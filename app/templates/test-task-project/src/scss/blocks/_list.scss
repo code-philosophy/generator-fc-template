@@ -329,6 +329,10 @@
 		}
 
 		&__item-info {
+			div:first-of-type {
+				max-width: 770px;
+			}
+
 			li {
 				font-size: 24px;
 				line-height: 31px;
@@ -336,7 +340,18 @@
 		}
 
 		.list__item:first-of-type .list__item-info li::before {
-			top: 14px;
+			left: -14px;
+			top: 12px;
+			width: 8px;
+			height: 8px;
+		}
+	}
+
+	.list__item:first-of-type {
+		.list__item-info {
+			ul {
+				margin-left: 16px;
+			}
 		}
 	}
 }
